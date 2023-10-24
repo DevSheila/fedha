@@ -85,10 +85,14 @@
     max-width: 220px;
     }
 
-    .section.home-hero {
+    /* .header {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    } */
+    /* .section.home-hero {
       padding-top: 2px;
       padding-bottom:2px;
-    }
+    } */
     .section {
       padding-top: 10px;
       padding-bottom:10px;
@@ -97,13 +101,92 @@
       padding-top: 10px;
       padding-bottom:10px;
     }
-    .header {
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
 
 
 
+  .container{
+    max-width: 1170px;
+    margin:auto;
+
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-col ul{
+    list-style: none;
+    padding-left:0px;
+  }
+  .footer{
+    background-color: #ffffff;
+      padding: 30px 0;
+  }
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #24262b;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    /* background-color: linear-gradient(#e91e63 , #3E1396); */
+    background-color: #3E1396;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50%;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    color: #24262b;
+    text-decoration: none;
+    font-weight: 300;
+    color: #24262b;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #bbbbbb;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #3E1396;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #3E1396;
+    background-color: #ffffff;
+  }
+
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
 
   </style>
   <body>
@@ -131,7 +214,7 @@
                   class="header-logo"
               /></a>
             </div>
-             <div class="split-content header-center"> 
+            <div class="split-content header-center"> 
               <nav role="navigation" class="nav-menu w-nav-menu">
                 <ul role="list" class="header-navigation">
 
@@ -150,9 +233,22 @@
                   
                 </ul>
               </nav>
-             
-            </div> 
 
+              <div class="menu-button w-nav-button">
+                <div class="header-menu-button-icon-wrapper">
+                  <div class="icon-wrapper">
+                    <div class="header-menu-button-icon-top"></div>
+                    <div class="header-menu-button-icon-medium"></div>
+                    <div class="header-menu-button-icon-bottom"></div>
+                  </div>
+                </div>
+              </div>
+             
+            </div>  
+       
+
+          </div>
+        </div>
           </div>
         </div>
         <div class="bg header"></div>
@@ -608,37 +704,7 @@
               <p class="paragraph first-perks">
                 Create personalized budgets that are as unique as you are. Our app helps you set realistic financial goals and stick to them, so you can watch your savings grow.
               </p>
-              <!-- <div class="w-layout-grid first-perks-grid">
-                <div class="first-perk-wrapper">
-                  <img
-                    src="https://assets.website-files.com/612685230ff8fbfa2a837a49/612685230ff8fb18eb837aa3_icon-1-home-perks-app-x-template.svg"
-                    alt=""
-                    class="image first-perk-icon"
-                  />
-                  <div class="first-perk-content">
-                    <h3 class="title h5-size first-perk">Send payments</h3>
-                    <p class="paragraph first-perk">
-                      Quis auctor elit sed vulputate mi sit amet magnis dis
-                      parturient.
-                    </p>
-                  </div>
-                </div>
-                <div class="first-perk-wrapper">
-                  <img
-                    src="https://assets.website-files.com/612685230ff8fbfa2a837a49/612685230ff8fb509d837aa2_icon-2-home-perks-app-x-template.svg"
-                    alt=""
-                    class="image first-perk-icon"
-                  />
-                  <div class="first-perk-content">
-                    <h3 class="title h5-size first-perk">Request payments</h3>
-                    <p class="paragraph first-perk">
-                      Enim lobortis scelerisque fermentum dui et magnis dis
-                      montes.
-                    </p>
-                  </div>
-                </div>
-              </div> -->
-            </div>
+             </div>
           </div>
         </div>
       </div>
@@ -725,137 +791,8 @@
         </div>
       </div>
       </div>
-      <!-- <footer class="footer">
-        <div class="container-default w-container">
-          <div class="footer-wrapper">
-            <div
-              data-w-id="0a603cb5-369c-00f7-72ab-607afee37b9d"
-              class="footer-content-top"
-            >
-              <div class="footer-main-content">
-                <a
-                  href="index.html"
-                  aria-current="page"
-                  class="footer-logo-container w-inline-block w--current"
-                  ><img
-                    src="./assets/fp-full-logo.png"
-                    alt=""
-                    class="footer-logo"
-                /></a>
-                <p class="paragraph footer-main-content-parargraph">
-                 Manage Your Finances, Empower Your Wealth
-                </p>
-              </div>
-              <div class="footer-nav-wrapper">
 
 
-       
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </footer> -->
-
-      <style>
-
-/*
-*{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-} */
-.container{
-	max-width: 1170px;
-	margin:auto;
-
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-  padding-left:0px;
-}
-.footer{
-	background-color: #ffffff;
-    padding: 30px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #24262b;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	/* background-color: linear-gradient(#e91e63 , #3E1396); */
-  background-color: #3E1396;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50%;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	color: #24262b;
-	text-decoration: none;
-	font-weight: 300;
-	color: #24262b;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #bbbbbb;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: #3E1396;
-	/* background-color: linear-gradient(#e91e63 , #3E1396); */
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	/* color: linear-gradient(#e91e63 , #3E1396); */
-	color: #3E1396;
-	background-color: #ffffff;
-}
-
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
-
-
-
-
-      </style>
       <footer class="footer">
         <div class="container">
           <div class="row">
