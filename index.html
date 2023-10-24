@@ -58,7 +58,10 @@
       href="./assets/fp-mini-logo.png"
       rel="apple-touch-icon"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
     <script type="text/javascript">
       window.__WEBFLOW_CURRENCY_SETTINGS = {
         currencyCode: "USD",
@@ -80,6 +83,23 @@
     }
     .header-logo {
     max-width: 220px;
+    }
+
+    .section.home-hero {
+      padding-top: 2px;
+      padding-bottom:2px;
+    }
+    .section {
+      padding-top: 10px;
+      padding-bottom:10px;
+    }
+    .section.cta{
+      padding-top: 10px;
+      padding-bottom:10px;
+    }
+    .header {
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 
@@ -102,7 +122,7 @@
           <div class="header-wrapper">
             <div class="split-content header-right">
               <a
-                href="index.html"
+                href="#"
                 aria-current="page"
                 class="brand w-nav-brand w--current"
                 ><img
@@ -114,14 +134,7 @@
              <div class="split-content header-center"> 
               <nav role="navigation" class="nav-menu w-nav-menu">
                 <ul role="list" class="header-navigation">
-                  <li class="nav-item-wrapper">
-                    <a
-                      href="#"
-                      aria-current="page"
-                      class="nav-link w--current"
-                      >Home</a
-                    >
-                  </li>
+
                   <li class="nav-item-wrapper">
                     <a href="#home-hero" class="nav-link">About</a>
                   </li>
@@ -668,23 +681,9 @@
                 >
                 Manage Your Finances,Empower Your Wealth
                 </h2>
-                <h5
-                data-w-id="2b06b3da-7964-8164-d243-a5954b50e82a"
-                style="
-                  -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                "
-                class="title neutral-100 cta"
+                <a href="#" class="button-primary w-button"
+                >Join  The Movement</a
               >
-              Join The Movement
-              </h5>
               </div>
               <img
                 class="image cta"
@@ -726,6 +725,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
       <!-- <footer class="footer">
         <div class="container-default w-container">
@@ -778,10 +778,11 @@
 }
 ul{
 	list-style: none;
+  padding-left:0px;
 }
 .footer{
 	background-color: #ffffff;
-    padding: 70px 0;
+    padding: 30px 0;
 }
 .footer-col{
    width: 25%;
@@ -799,7 +800,8 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	/* background-color: linear-gradient(#e91e63 , #3E1396); */
+  background-color: #3E1396;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50%;
@@ -812,19 +814,20 @@ ul{
 	color: #24262b;
 	text-decoration: none;
 	font-weight: 300;
-	color: #bbbbbb;
+	color: #24262b;
 	display: block;
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #24262b;
+	color: #bbbbbb;
 	padding-left: 8px;
 }
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	background-color: #e91e63;
+	background-color: #3E1396;
+	/* background-color: linear-gradient(#e91e63 , #3E1396); */
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
@@ -833,7 +836,8 @@ ul{
 	transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-	color: #ef3a76;
+	/* color: linear-gradient(#e91e63 , #3E1396); */
+	color: #3E1396;
 	background-color: #ffffff;
 }
 
@@ -860,14 +864,14 @@ ul{
             <div class="footer-col">
               <h4>Contact Us</h4>
               <ul>
-                <li><a href="#"><i class="fa fa-envelope" style="padding: 2px;"></i>ambuthia@fedhapro.com</a></li>
-                <li><a href="#"><i class="fa fa-phone" style="padding: 2px;"></i>+254745313049</a></li>
+                <li><a href="#"><i class="fa fa-envelope" style="padding: 2px;color:#3E1396;"></i>ambuthia@fedhapro.com</a></li>
+                <li><a href="#"><i class="fa fa-phone" style="padding: 2px;color:#3E1396;"></i>+254745313049</a></li>
               </ul>
             </div>
             <div class="footer-col">
               <h4>Visit Us</h4>
               <ul>
-                <li><a href="#"><i class="fa fa-map-marker" style="padding: 2px;"></i>The Atrium Building,Chaka Road Kilimani<br> 4th Floor.Suite 4.07</a></li>
+                <li><a href="#"><i class="fa fa-map-marker" style="padding: 2px;color:#3E1396;"></i>The Atrium Building,Chaka Road Kilimani<br> 4th Floor.Suite 4.07</a></li>
 
 
               </ul>
@@ -880,12 +884,14 @@ ul{
               </ul>
             </div>
             <div class="footer-col">
-              <h4>Follow us</h4>
+              <h4>Follow Us</h4>
               <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
               </div>
             </div>
           </div>
