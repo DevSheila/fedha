@@ -186,8 +186,15 @@
   @media(max-width: 574px){
     .footer-col{
       width: 100%;
-
+      text-align: center; /* Center the text */
+      justify-content: center; /* Center all content */
+      position: relative; /* Ensure ::before is positioned relative to .footer-col */
     }
+    .footer-col h4::before {
+      left: 50%; /* Move the pseudo-element to the center */
+      transform: translateX(-50%); /* Center the pseudo-element */
+    }
+
   
   }
 
