@@ -2734,6 +2734,7 @@ body {
     font-size: 15px;
     line-height: 1.5em;
     font-weight: 500;
+    text-align: left;
 }
 
 h1 {
@@ -3471,7 +3472,7 @@ figcaption {
 }
 
 .header-logo {
-  max-width: 118px;
+  max-width: 220px;
 }
 
 .header-navigation {
@@ -8285,6 +8286,7 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
+
   h1 {
     font-size: 40px;
   }
@@ -11756,6 +11758,11 @@ figcaption {
 }
 
 @media screen and (max-width: 479px) {
+ 
+    .header-logo{
+        max-width: 118px;
+    }
+
   h1 {
     margin-bottom: 10px;
     font-size: 30px;
@@ -13686,9 +13693,7 @@ figcaption {
     display:None !important;
     visibility: hidden !important;
   }
-  .header-logo {
-  max-width: 220px;
-  }
+
 
   .header {
     padding-top: 2px;
@@ -13803,4 +13808,6 @@ figcaption {
 
 }
 
-
+*{
+    text-align: left;
+}
