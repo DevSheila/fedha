@@ -13738,10 +13738,10 @@ figcaption {
   padding: 0 15px;
 }
 .footer-col h4{
-  font-size: 18px;
+  font-size: 20px;
   color: #24262b;
   margin-bottom: 35px;
-  font-weight: 500;
+  font-weight: bold;
   position: relative;
 }
 .footer-col h4::before{
@@ -13787,6 +13787,7 @@ figcaption {
   background-color: #ffffff;
 }
 
+
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -13801,13 +13802,16 @@ figcaption {
     position: relative; /* Ensure ::before is positioned relative to .footer-col */
   }
   .footer-col h4::before {
-    left: 50%; /* Move the pseudo-element to the center */
+    left: 25%; /* Move the pseudo-element to the center */
     transform: translateX(-50%); /* Center the pseudo-element */
+    width: 50%;
+
   }
 
 
 }
-
 *{
     text-align: left;
 }
+
+
