@@ -86,9 +86,10 @@
     }
 
     .header {
-    padding-top: 2px;
-    padding-bottom: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
+
     .section.home-hero {
       padding-top: 2px;
       padding-bottom:2px;
@@ -137,7 +138,6 @@
     position: absolute;
     left:0;
     bottom: -10px;
-    /* background-color: linear-gradient(#e91e63 , #3E1396); */
     background-color: #3E1396;
     height: 2px;
     box-sizing: border-box;
@@ -204,40 +204,43 @@
         <div class="container-default w-container">
           <div class="header-wrapper">
             <div class="split-content header-right">
-              <a
-                href="#"
-                aria-current="page"
-                class="brand w-nav-brand w--current"
+              <a href="#" class="brand w-nav-brand"
                 ><img
                   src="./assets/fp-full-logo.png"
                   alt=""
                   class="header-logo"
               /></a>
             </div>
-            <div class="split-content header-center"> 
+            <div class="split-content header-center">
               <nav role="navigation" class="nav-menu w-nav-menu">
                 <ul role="list" class="header-navigation">
-
                   <li class="nav-item-wrapper">
-                    <a href="#home-hero" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                   </li>
-
                   <li class="nav-item-wrapper">
-                    <a href="#what" class="nav-link">What We Offer</a>
+                    <a
+                      href="#what"
+                      aria-current="page"
+                      class="nav-link w--current"
+                      >What We Offer</a
+                    >
                   </li>
-
-
+                 
+                      
                   <li class="nav-item-wrapper">
                     <a href="#features" class="nav-link">Features</a>
                   </li>
-                  
+
+                  <li class="nav-item-wrapper">
+                    <a href="#contact" class="nav-link">Contact</a>
+                  </li>
+                
                 </ul>
               </nav>
-             
-            </div>  
-       
+         
+            </div>
             <div class="split-content header-left">
-             
+
               <div class="menu-button w-nav-button">
                 <div class="header-menu-button-icon-wrapper">
                   <div class="icon-wrapper">
@@ -250,14 +253,12 @@
             </div>
           </div>
         </div>
-          </div>
-        </div>
         <div class="bg header"></div>
       </div>
       <div
         data-w-id="ee66bade-55fe-b19a-4c7f-34e218c66fb2"
         class="section home-hero"
-        id="home-hero"
+        id="about"
       >
         <div class="container-default home-hero w-container">
           <div class="home-hero-wrapper">
@@ -794,7 +795,7 @@
       </div>
 
 
-      <footer class="footer">
+      <footer class="footer" id="contact">
         <div class="container">
           <div class="row">
             <div class="footer-col">
