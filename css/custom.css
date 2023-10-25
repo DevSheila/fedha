@@ -8284,8 +8284,14 @@ figcaption {
   transform: scale3d(0.94, 0.94, 1.01);
   color: #4a3aff;
 }
+.home-hero-content{
+  height:600px;
+}
 
 @media screen and (max-width: 991px) {
+  .home-hero-content{
+    height:600px;
+  }
 
   h1 {
     font-size: 40px;
@@ -10042,6 +10048,12 @@ figcaption {
 }
 
 @media screen and (max-width: 767px) {
+
+  .home-hero-content{
+    height:auto;
+  }
+  
+
   h1 {
     margin-bottom: 16px;
     font-size: 42px;
@@ -11759,6 +11771,18 @@ figcaption {
 
 @media screen and (max-width: 479px) {
  
+  .home-hero-content{
+    height:auto;
+  }
+  .hero-image-wrapper{
+    height:600px;
+  }
+
+  .home-hero-wrapper{
+    height:auto;
+  }
+
+
     .header-logo{
         max-width: 118px;
     }
@@ -13805,9 +13829,7 @@ figcaption {
     left: 25%; /* Move the pseudo-element to the center */
     transform: translateX(-50%); /* Center the pseudo-element */
     width: 50%;
-
   }
-
 
 }
 *{
