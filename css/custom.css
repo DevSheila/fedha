@@ -5727,7 +5727,8 @@ figcaption {
 }
 
 .content-top.home-features {
-  margin-bottom: 48px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -10705,9 +10706,7 @@ figcaption {
   }
 
   .split-content.content-top-home-features-left {
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-left: auto;
+    margin: 10px;
   }
 
   .split-content.card-home-feature {
@@ -11006,7 +11005,6 @@ figcaption {
   }
 
   .content-top.home-features {
-    margin-bottom: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
