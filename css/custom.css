@@ -11006,7 +11006,8 @@ figcaption {
 
   .content-top.home-features {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-box-direction: norm
+    al;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
